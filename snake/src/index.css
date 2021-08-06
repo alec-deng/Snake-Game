@@ -1,0 +1,17 @@
+.board {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 75vh;
+  width: 75vh;
+  border: solid 0.1vh black;
+}
+
+.snake {
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  background-color: black;
+  border: solid 0.1vh white;
+}
