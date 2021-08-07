@@ -49,7 +49,7 @@ class Interface extends Component {
   render () {
     return (
       <div className="board">
-      {(this.props.score === -1)? <></> : <p>Game Over! Your score is {this.props.score}.</p >}
+      {(this.props.score === -1)? <></> : <p style={{margin: '1vh'}}>Game Over! Your score is {this.props.score}.</p >}
           Game Mode:<button onClick={this.props.switch} style={{margin: '1vh'}}>{(this.props.wall)? "Edges On" : "Edges Off"}</button>
           <p className="description">When the edges are off, the snake won't die when it hits the edge of the board,
                                      instead, it will come out from the other side. When the edges
@@ -57,7 +57,7 @@ class Interface extends Component {
                                      <br></br><br></br>
                                      (use arrow keys to control the snake) </p >
           <br/><br/><br/>
-          <button onClick={this.props.play}>Play Game</button>      
+          <button onClick={this.props.play} style={{margin: '1vh'}}>Play Game</button>      
       </div>
     );
   }
