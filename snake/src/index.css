@@ -1,11 +1,11 @@
 .board {
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 50%;
   transform: translateX(-50%);
   height: 80vh;
   width: 80vh;
-  border: solid 0.5vh black;
+  border: solid 4.5vh black;
 }
 
 .snake {
@@ -24,4 +24,28 @@
   background-color: red;
   border: solid 0.3vh white;
   z-index: 1;
+}
+
+.rule {
+  position: absolute;
+  top: 15%;
+  height: 60vh;
+  width: 60vh;
+}
+
+.button {
+  position: relative;
+  left: 32%;
+  height: 10vh;
+  width: 20vh;
+  font-size: 3vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.description {
+  position: relative;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  top: 5%;
+  text-align: center;
 }
