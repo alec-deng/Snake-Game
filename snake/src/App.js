@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    setInterval(this.move, this.state.speed);
+    window.interval = setInterval(this.move, this.state.speed);
     document.onkeydown = this.keyPressed;
   }
 
@@ -30,6 +30,10 @@ class App extends Component {
     this.checkEdges();
     this.checkEatFood();
     this.checkEatItself();
+  }
+
+  componentWillUnmount = () => {
+    clearInterval(window.interval);
   }
 
   checkEdges = () => {
@@ -137,9 +141,9 @@ class App extends Component {
       <div>
         <div className="rule">
           <button className="button" onClick={this.swich}>{this.state.button}</button>
-          <p className="description">When the edge is off, the snake won't die when it goes out of the board,
-                                     instead, it will come out from the other side of the board. When the edge
-                                     is on, the snake will die if it tries to run out of the board.
+          <p className="description">When the edges are off, the snake won't die when it hits the edge of the board,
+                                     instead, it will come out from the other side. When the edges
+                                     are on, the snake will die if it tries to run out of the board.
                                      <br></br><br></br>
                                      (use arrow keys to control the snake) </p>
         </div>
