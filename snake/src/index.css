@@ -3,15 +3,25 @@
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  height: 75vh;
-  width: 75vh;
-  border: solid 0.1vh black;
+  height: 80vh;
+  width: 80vh;
+  border: solid 0.5vh black;
 }
 
 .snake {
   position: absolute;
-  height: 5%;
-  width: 5%;
+  height: 3.4vh;
+  width: 3.4vh;
   background-color: black;
-  border: solid 0.1vh white;
+  border: solid 0.3vh white;
+  z-index: 2;
+}
+
+.food {
+  position: absolute;
+  height: 3.4vh;
+  width: 3.4vh;
+  background-color: red;
+  border: solid 0.3vh white;
+  z-index: 1;
 }
