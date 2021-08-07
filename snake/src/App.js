@@ -96,9 +96,7 @@ class Board extends Component {
     let head = this.state.snake[this.state.snake.length - 1];
     if ( head[0] >= 20 || head[0] < 0 || head[1] >= 20 || head[1] < 0 ) {
       if ( this.props.wall ) {
-        this.resetGame();
-      } else {
-        
+        this.resetGame(); 
       }
     }
   }
@@ -109,7 +107,7 @@ class Board extends Component {
     snake.pop();
     snake.forEach(body => {
       if ( (head[0] === body[0]) && (head[1] === body[1]) ) {
-        this.resetGame();
+        this.resetGame(); 
       }
     })
   }
@@ -174,7 +172,7 @@ class Board extends Component {
   }
 
   resetGame = () => {
-    alert(`Game Over! Your score is: ${this.state.snake.length - 2}`);
+    alert("YOU DIED, press enter to continue :D");
     this.props.end(this.state.snake.length - 2);
     this.setState({
       food: randomCoordinate(),
