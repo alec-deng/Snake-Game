@@ -2,8 +2,9 @@
   position: relative;
   display: block;
   margin: auto;
-  height: 80vh;
-  width: 80vh;
+  height: 76vh;
+  width: 76vh;
+  padding: 2vh;
   border: solid 4.5vh black;
 }
 
