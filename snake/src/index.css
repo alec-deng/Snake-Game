@@ -1,10 +1,10 @@
 .board {
   position: relative;
-  margin: 7%;
-  margin-bottom: 0;
-  left: 80%;
+  display: block;
+  margin: auto;
   height: 80vh;
   width: 80vh;
+  padding: 2vh;
   border: solid 4.5vh black;
 }
 
@@ -51,6 +51,6 @@
   text-align: center;
 }
 
-.game {
-  position: absolute;
+#game {
+  justify-content: center;
 }
