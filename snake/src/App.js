@@ -70,7 +70,7 @@ class Board extends Component {
       food: randomCoordinate(),
       snake: [[0,0],[1,0]],
       direction: 2, // 0:left, 1:up, 2:right, 3:down
-      speed: 130,  // simulating infinity
+      speed: 130
     }
   }
 
