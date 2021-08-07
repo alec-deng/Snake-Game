@@ -138,7 +138,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="game">
         <div className="rule">
           <button className="button" onClick={this.swich}>{this.state.button}</button>
           <p className="description">When the edges are off, the snake won't die when it hits the edge of the board,

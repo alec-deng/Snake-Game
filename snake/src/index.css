@@ -1,8 +1,8 @@
 .board {
-  position: absolute;
-  top: 8%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
+  margin: 7%;
+  margin-bottom: 0;
+  left: 80%;
   height: 80vh;
   width: 80vh;
   border: solid 4.5vh black;
@@ -28,6 +28,7 @@
 
 .rule {
   position: absolute;
+  right: 20%;
   top: 15%;
   height: 60vh;
   width: 60vh;
@@ -48,4 +49,8 @@
   margin-right: 10vh;
   top: 5%;
   text-align: center;
+}
+
+.game {
+  position: absolute;
 }
